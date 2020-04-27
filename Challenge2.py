@@ -24,7 +24,7 @@ def test_facebook_search_for_Macbook(py):
         assert py.contains('MacBook Air')
 
 
-def test_homedepot_chair(py):
+def test_homedepot_topseller(py):
         py.visit('https://homedepot.com')
         py.get('[id="headerSearch"]').type('electric', Keys.ENTER)
         py.get('[data-defaultsortbylabel="Best Match"]'), Keys.ENTER
